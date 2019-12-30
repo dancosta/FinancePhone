@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simulador de financiamento</title>
+
+  <!-- Boootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/272d0cd062.js" crossorigin="anonymous"></script>
+
+
+  <!-- JS bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+  <!-- Logo company  -->
+  <div class="container">
+    <div class="py-5 text-center">
+      <i class="icon fas fa-hand-holding-usd fa-4x"></i>
+      <h2>Simule o parcelamento</h2>
+    </div>
+
+
+    <!-- Financing form -->
+
+    <div class=" mx-auto" >
+      <form class="form-row mb-3 align-items-end" action="javascript:void(0);">
+
+        <div class="col-sm-6 form-group">
+          <label for="val_compra">Valor da compra</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">R$</span>
+            </div>
+            <input class="form-control" type="text" name="" id="val_compra">
+          </div>
+        </div>
+        <div class="col-sm-4 form-group">
+          <label for="val_entrada">Entrada em dinheiro</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">R$</span>
+            </div>
+            <input class="form-control" type="text" name="" id="val_entrada">
+          </div>
+        </div>
+        <div class="col-sm-2 form-group">
+          <!--<label for="calcule">:   </label>--> 
+          <button class="form-control btn btn-secondary" id="calc">Calcule</button>
+        </div>
+        <!--<button class="col-sm-2 form-group btn btn-secondary">Calcule</button>-->
+      </form>
+
+      <div id="resultTable" class="hidden">
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Parcelas</th>
+                  <th>Valor Parcela</th>
+                  <th>Valor Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="fin_1x">
+                  <td>1x</td>
+                  <td class="parcel">R$ 0,00</td>
+                  <td class="total">R$ 0,00</td>
+                </tr>
+                <tr id="fin_2x">
+                  <td>2x</td>
+                  <td class="parcel">R$ 0,00</td>
+                  <td class="total">R$ 0,00</td>
+                </tr >
+                <tr id="fin_3x">
+                  <td>3x</td>
+                  <td class="parcel">R$ 0,00</td>
+                  <td class="total">R$ 0,00</td>
+                </tr>
+                <tr id="fin_4x">
+                  <td>4x</td>
+                  <td class="parcel">R$ 0,00</td>
+                  <td class="total">R$ 0,00</td>
+                </tr>
+                <tr id="fin_5x">
+                  <td>5x</td>
+                  <td class="parcel">R$ 0,00</td>
+                  <td class="total">R$ 0,00</td>
+                </tr>
+                <tr id="fin_6x">
+                  <td>6x</td>
+                  <td class="parcel">R$ 0,00</td>
+                  <td class="total">R$ 0,00</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/simulador.js"></script>
+</body>
+
+</html>
