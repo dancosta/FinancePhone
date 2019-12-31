@@ -54,7 +54,7 @@ function performCalc(){
   
   
   
-  for (var index = 0; index < 6; index++) {
+  for (var index = 0; index < taxes.length; index++) {
     var tax = taxes[index];
     var numOfParcels = (index+1);
     var finPlusTax = finance * tax;
