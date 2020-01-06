@@ -1,3 +1,25 @@
+
+
+/** input masks */
+
+$(document).ready(function(){
+ $("#val_compra").inputmask("currency", {radixPoint:','}); 
+ $("#val_entrada").inputmask("currency", {radixPoint:','});
+  
+  
+});
+
+/** helper function
+ * to parse a string of a currrency or real number based on the locale
+ * https://stackoverflow.com/questions/29255843/is-there-a-way-to-reverse-the-formatting-by-intl-numberformat-in-javascript
+ */
+function reverseFormatNumber(val,locale){
+  var group = new Intl.NumberFormat(locale).format(1111).replace(/1/g, '');
+  var decimal = new Intl.NumberFormat(locale).format(1.1).replace(/1/g, '');
+  var reversedVal = val.replace(new RegExp('\\' + group, 'g'), '');
+  reversedVal = reversedVal.replace(new RegExp('\\' + decimal, 'g'), '.');
+  return Number.isNaN(reversedVal)?0:reversedVal;
+}
 /** 
 1x 2.5%
 2x 3.5%
@@ -13,7 +35,7 @@
 12x 15.5%
 */
 
-/** GLOALs */
+/** GLOBALs */
 var currLocal = {
   style: "currency",
   currency: "BRL"
@@ -41,8 +63,8 @@ function performCalc(){
   
   //x = n.toLocaleString("en-GB", currLocal);
   
-  var price = $("#val_compra").val();
-  var inital = $("#val_entrada").val();
+  var price = reverseFormatNumber($("#val_compra").val(),"pt-BR");
+  var inital = reverseFormatNumber($("#val_entrada").val(),"pt-BR");
   
   
   var finance = price - inital;
