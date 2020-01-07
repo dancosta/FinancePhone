@@ -1,0 +1,25 @@
+/* smaller phones (e.g iphone 5)*/
+@media screen and (max-width: 360px ){
+    h2 {font-size: 1.5rem;}
+    h3 {font-size: 1.0rem;}
+}
+/*bigger phones*/
+@media screen and (min-width: 361px ){
+    /* that is actually the default when using bootstrap*/
+    h2 {font-size: 1.8rem;}
+    h3 {font-size: 1.22rem;}
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+
+.icon {
+    color: #472b62;
+}
+
+.hidden {
+    display: none;
+}
