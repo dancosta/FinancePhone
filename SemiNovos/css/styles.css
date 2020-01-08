@@ -15,6 +15,10 @@
 }
 
 
+.container{
+    max-width:750px;
+   /* margin:0 auto;/*make it centered*/
+}
 
 .icon {
     color: #472b62;
