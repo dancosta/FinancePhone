@@ -27,3 +27,8 @@
 .hidden {
     display: none;
 }
+
+.price {
+    margin: 0.5rem 0 0 0!important;
+    padding: 0!important;
+}
