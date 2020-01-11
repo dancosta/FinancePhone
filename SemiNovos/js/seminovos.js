@@ -14,7 +14,7 @@
  */
 
 $.getJSON('data/phones.json', function (data) {
-  console.log(data);
+  //console.log(data);
   var output = '';
   $.each(data, function (key, val) {
     output += '<tr class="phoneDesc">\n';
@@ -22,9 +22,9 @@ $.getJSON('data/phones.json', function (data) {
     output +=     '<p class="price text-right hidden"> ' + val.price + '</p>';
     output +=   '</td>';
     output +='</tr>\n';
-    console.log(output);
+    //console.log(output);
   });
-  console.log(output);
+  //console.log(output);
   $('#updateTable').html(output);
   // wait for the table to be ready for registering 
   // click handler 
@@ -32,7 +32,7 @@ $.getJSON('data/phones.json', function (data) {
 
 function addClickHandler (){
   $(".phoneDesc").on("click", function () {
-    console.log(this);
+    //console.log(this);
     let clicked = $(this).find("p");
     $(clicked).slideToggle().toggleClass("active");
     $("#deviceTable").find(".active").not(clicked).removeClass("active").slideUp();
