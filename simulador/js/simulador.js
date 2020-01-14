@@ -108,4 +108,5 @@ function changeResultTable(numOfParcels, parcel, totalFinal){
 
 function shwoResultTable() {
   $("#resultTable").fadeIn();
+  document.getElementById("resultTable").scrollIntoView({behavior:"smooth"});
 }
