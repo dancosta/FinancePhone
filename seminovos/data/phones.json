@@ -33,19 +33,19 @@
   },
   {
     "device":"iPhone X 64 Gb",
-    "price":"R$ 2.800,00 - R$ 3.000,00"
+    "price":"R$ 2.300,00 - R$ 2.500,00"
   },
   {
     "device":"iPhone X 256 Gb",
-    "price":"R$ 3.000,00 - R$ 3.200,00"
+    "price":"R$ 2.600,00 - R$ 2.800,00"
   },
   {
     "device":"iPhone XR 64 Gb",
-    "price":"R$ 2.800,00 - R$ 3.000,00"
+    "price":"R$ 2.300,00 - R$ 2.500,00"
   },
   {
     "device":"iPhone XR 128 Gb",
-    "price":"R$ 3.000,00 - R$ 3.200,00"
+    "price":"R$ 2.600,00 - R$ 2.800,00"
   },
   {
     "device":"iPhone Xs 64 Gb",
@@ -53,10 +53,10 @@
   },
   {
     "device":"iPhone Xs max 64 Gb",
-    "price":"R$ 4.000,00 - R$ 4.200,00"
+    "price":"R$ 3.200,00 - R$ 3.500,00"
   },
   {
     "device":"iPhone Xs max 256 Gb",
-    "price":"R$ 4.300,00 - R$ 4.500,00"
+    "price":"R$ 3.500,00 - R$ 3.800,00"
   }
 ]
